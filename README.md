@@ -2,7 +2,7 @@
 
 ![logo](design/img/logo-preview.png)
 
-[What is it?]() / [What is Advanced Electrical Services]() / [Requirements]() / [Preview Images]() / [Licence]()
+[What is it?](https://github.com/nicholasadamou/Advanced-Electrical-Services#what-is-it) / [What is Advanced Electrical Services](https://github.com/nicholasadamou/Advanced-Electrical-Services#what-is-advanced-electrical-services) / [Requirements](https://github.com/nicholasadamou/Advanced-Electrical-Services#requirements) / [Preview Images](https://github.com/nicholasadamou/Advanced-Electrical-Services#preview-images) / [Licence]()
 
 What is it?
 ------------
@@ -31,7 +31,7 @@ Visit the [previews directory](previews) to see what the project looks like when
 License
 ------------
 
-© 2018 Mack Media Group, LLC, Nicholas Adamou.
+© 2018 Advanced Electrical Services Inc & Nicholas Adamou.
 
 It is free software, and may be redistributed under the terms specified in the [LICENSE] file.
 
