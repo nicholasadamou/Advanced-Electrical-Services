@@ -1,0 +1,47 @@
+h1, h2, h3, h4, h5, h6
+  font-family: $header-f
+
+p, em, strong
+  font-family: $copy-f
+
+::selection
+  background: $blue
+  color: white
+  
+img::selection
+  background: transparent
+
+body
+  -webkit-tap-highlight-color: $blue
+
+body
+    font-family: $copy-f
+    position: relative
+
+#border
+    border: 24px solid $blue
+    height: 100%
+    
+    position: relative
+
+    @media (max-width: 380px)
+      border: 16px solid $blue
+
+    #header
+        @extend %background-img
+        background-image: url($header-img)
+        position: relative
+        height: 100vh
+
+    
+    .blue_container
+      @extend %container
+      background-color: $blue
+      color: white
+    
+    .white_container
+      @extend %container
+      background-color: white
+      background: url(http://stephy.mccdgm.net/images/patterns/geometry.png)
+      
+      color: black

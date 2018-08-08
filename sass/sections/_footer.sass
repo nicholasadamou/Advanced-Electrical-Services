@@ -1,0 +1,120 @@
+.footer_wrapper
+    max-width: 50%
+    margin: 0 auto
+    margin-bottom: 144px
+    +clearfix
+
+    @media (max-width: 1440px)
+        max-width: 75%
+
+    @media (max-width: 1024px)
+        max-width: 90%
+    
+    @media (max-width: 768px)
+        max-width: 100%
+
+    section
+        float: left
+        width: 33.33%
+
+        @media (max-width: 640px)
+            float: none
+            width: 100%
+
+        hr
+            width: 50% !important
+
+    h3
+        font-size: 24px
+        
+        @media (max-width: 768px)
+            font-size: 18px
+
+    p
+        font-size: 14px
+
+        @media (max-width: 768px)
+            font-size: 12px
+
+    .contact
+        p a
+            color: white
+    
+    .social
+        .btn
+            display: block
+            margin-bottom: 1em
+            padding: 1em 1.5em
+            width: 50%
+
+            color: $btn-text-color
+            background: $btn-bg
+            border: 1px solid $border-color
+            border-radius: 5px
+
+            user-select: none
+            text-align: left
+            text-decoration: none
+
+            transition: color, background 200ms ease-out
+
+            &:hover
+                background: $secondary
+                border-color: transparent
+                color: rgba(white, 0.5)
+
+                strong
+                    color: white !important
+
+            @media (max-width: 768px)
+                text-align: center
+                font-size: 14px
+
+            @media (max-width: 640px)
+                margin: 0 auto
+                width: 50%
+                text-align: center
+            
+            strong
+                color: $strong
+                transition: color 200ms ease-out
+        
+        .facebook
+            strong
+                color: $facebook
+            
+            &:hover
+                background: $facebook
+
+    .payment
+        ul
+            list-style-type: none
+            padding: 0
+
+            li
+                display: inline
+                padding: 5px
+
+                font-size: 32px
+
+                @media (max-width: 768px)
+                    font-size: 24px
+
+                @media (max-width: 320px)
+                    font-size: 28px 
+
+    
+.footer_bottom_wrapper
+    text-align: center
+
+    img
+        display: block
+        width: 300px
+        height: auto
+        margin: 20px auto
+
+        @media (max-width: 768px)
+            width: 250px
+
+        @media (max-width: 640px)
+            width: 200px

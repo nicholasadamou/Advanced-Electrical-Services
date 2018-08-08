@@ -1,0 +1,15 @@
+mixin team_member(imgSrc, name, position, title, description)
+    .member_wrapper
+        img(src=imgSrc).avatar
+        .name #{name}
+        .position #{position}
+        .title #{title}
+        p #{description}
+
+h1#team Meet the Team
+hr.seperator.white
+.team_wrapper
+    +team_member("assets/img/tom_avatar.png", "Tom Fisher", "President/Owner", "E-1 Master Electrican", "\"I have over 35 years of experience in the electrical trade.  My experience includes everything from small residential repairs, new construction projects to commercial wiring. I have resided in New Milford for over 56 years and take great pride in my community, my work and my company. I want each and every customer to feel confident that you have put your trust in Kevin and I, who will use our years of experience to advise, repair and protect your home or office, with a team that is dependable and honest. My main objective is a reputation that is built on customer satisfaction and loyalty, making Advanced Electrical Services \"your trusted local electrician.\" I look forward to meeting you and exceeding your expectations.\"")
+    +team_member("assets/img/kevin_avatar.png", "Kevin Ford", "Employee", "E-2 Electrican", "\"I have been with Advanced Electrical Services, Inc. for over 27 years and I truly take the title of \"your local electrician\" to heart. My family has been in New Milford since the 1940’s and with my vast electrical expertise and many years of experience, I too, pride myself in providing exceptional service to my local community and the surrounding towns. Tom and I share a common goal;  to provide quality, reliable and honest electrical services to our customers. I welcome the opportunity to earn your trust and deliver to you the best service possible. Call us today for all of your electrical needs including energy efficient solutions for your home.\"")
+.fa-overlay#team_ico
+    i.fa.fa-users

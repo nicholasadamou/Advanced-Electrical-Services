@@ -1,0 +1,27 @@
+mixin testimonial(justify, content, author, numStars)
+    section(style="text-align: " + justify + ";").testimonial
+        span(style=justify + ": 0;") 
+            i(class="fa-quote-" + justify).fa
+        if (justify == "left")
+            p(style="margin-" + justify + ": 20px").content #{content}
+            p(style="margin-" + justify + ": 20px").author #{author}
+             - for (var i = 0; i < numStars; i++)
+                i(style="color: #FDE101").fa.fa-star
+        else
+            p(style="margin-" + "left" + ": -20px").content #{content}
+            p(style="margin-" + "left" + ": -20px").author
+                - for (var i = 0; i < numStars; i++)
+                    i(style="color: #FDE101").fa.fa-star
+                | #{author}
+           
+
+.fa-overlay#testimonials_ico
+    i.fa.fa-star
+
+h1#testimonals Testimonals
+hr.seperator.white
+
+.testimonals-wrapper
+    +testimonial("left", "I have used Tom at Advanced Electric for several jobs. He did all of the necessary electrical work when I finished my basement including getting the permit. He also has completed several smaller jobs with additional lighting, generator panel and exterior lighting and outlets. Tom and his crew are always prompt, neat and do excellent work. I highly recommend this company for all electrical jobs big and small.", "Bill McLanchlan", 5)
+    +testimonial("right", "I have used and referred Advanced Electrical many times over the years.  This local company is knowledgeable, courteous and always leave our house as clean, if not cleaner, than they found it.", "Richard Schipul", 5)
+    +testimonial("left", "Just a shout out for Tom Fisher at Advanced Electrical Services.  I called with a time emergency and he came first thing the very next day.  Within an hour his work was completed.  Thank you, Tom!", "Michael Gold", 5)

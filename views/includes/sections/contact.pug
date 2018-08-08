@@ -1,0 +1,15 @@
+h1#contact Contact Us
+hr.seperator.blue
+#form
+    form(action="//formspree.io/sfish33@aol.com" method="POST")
+        label.label(for='name') Enter Name: 
+        input#name.field(type='text', name='name', placeholder='Enter First and Last Name')
+        label.label(for='subject') Enter Subject: 
+        input#name.field(type='text', name='subject', placeholder="Let's Work Together")
+        label.label(for='email') Enter Email Address: 
+        input#email.field(type='email', name='email', placeholder='Enter Email Address')
+        label.label(for='message') Enter Message: 
+        textarea(name='message', rows='10', placeholder='Enter Message')
+        button.submit(type='submit' value="Send")
+            i.fa.fa-paper-plane-o
+        input(type="hidden" name="_next" value="form-success.html")

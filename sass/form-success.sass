@@ -1,0 +1,56 @@
+@import "tools/bourbon/bourbon"
+@import "https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+@import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+@import "https://fonts.googleapis.com/css?family=Raleway|Roboto"
+
+$blue: #212856
+
+body
+    background-color: $blue
+
+    font-family: "Roboto"
+    color: white
+
+    #container
+        display: flex
+        align-items: left
+        justify-content: center
+        flex-direction: column
+
+        height: 100vh
+        padding-left: 20px
+
+        @media (max-width: 1024px)
+            align-items: center
+            text-align: center
+            line-height: 1.5
+            padding-left: 0
+
+        h1
+            font:
+                family: "Raleway"
+                size: 64px
+        
+            @media (max-width: 1024px)
+                font-size: 48px
+
+            @media (max-width: 640px)
+                font-size: 32px
+
+            @media (max-width: 320px)
+                font-size: 28px
+
+        p
+            font:
+                size: 48px
+                weight: 400
+            
+            @media (max-width: 1440px)
+                font-size: 32px
+
+            @media (max-width: 640px)
+                font-size: 20px
+            
+            @media (max-width: 320px)
+                font-size: 18px

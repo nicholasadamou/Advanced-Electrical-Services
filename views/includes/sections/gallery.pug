@@ -1,0 +1,24 @@
+.gallery_wrapper
+    h1#gallery Gallery
+    hr.seperator.blue
+    - var gallery = "assets/img/gallery/";
+    - var jpg = ".jpg";
+    - var png = ".png";
+    - var images = [ gallery + "(1)" + jpg, gallery + "(2)" + jpg, gallery + "(3)" + jpg, gallery + "(4)" + jpg, gallery + "(5)" + jpg, gallery + "(6)" + jpg, gallery + "(1)" + png, gallery + "(2)" + png, gallery + "(3)" + png, gallery + "(4)" + png, gallery + "(5)" + png, gallery + "(6)" + png, gallery + "(8)" + png, gallery + "(7)" + png ];
+    .slider-wrapper
+        - for (var i = 0; i < images.length; i++)
+            input(type="radio" id="slide" + i name="slides" checked=i== 1 || 0)
+        
+        .slider-arrow-nav
+            - for (var i = 0; i < images.length; i++)
+                label(for="slide" + i class="nav-arrow prev")
+
+        .slider-arrow-nav
+            - for (var i = 0; i < images.length; i++)
+                label(for="slide" + i class="nav-arrow next")
+
+        .slider-content
+            - for (var i = 0; i < images.length; i++)
+                div(class="slide slide" + i)
+                    img(src=images[i])
+

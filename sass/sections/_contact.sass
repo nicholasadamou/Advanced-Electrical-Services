@@ -1,0 +1,151 @@
+#form
+    max-width: 50%
+    margin: 0 auto
+
+    @media (max-width: 640px)
+        max-width: 100%
+
+.label
+    margin-top: 2%
+    font:
+        family: $header-f
+        weight: bold
+
+    @media (max-width: 1024px)
+        font-size: 24px
+
+    @media (max-width: 768px)
+        font-size: 18px
+
+    @media (max-width: 640px)
+        text-align: left !important
+
+input
+    display: block
+    background: rgba(white, 0.75)
+    font:
+        family: $copy-f
+
+    @media (max-width: 1024px)
+        font-size: 24px
+
+    @media (max-width: 768px)
+        font-size: 18px
+
+
+button
+    display: block
+    margin: 0 auto
+
+.field
+    padding: 10px 0
+    width: 75%
+    padding: 10px 10px
+    margin: 20px 0px
+    text-align: left
+
+    @include transition(all 0.30s ease-in-out)
+    border: 2px solid $blue
+    border-radius: 5px
+
+    &::-webkit-input-placeholder
+        color: $blue
+
+    &:-moz-placeholder
+        color: $blue
+
+    &::-moz-placeholder
+        color: $blue
+
+    &:-ms-input-placeholder
+        color: $blue
+
+    &:focus
+        outline: none
+        box-shadow: 0 0 5px black
+    
+    @media (max-width: 1024px)
+        font-size: 24px
+
+    @media (max-width: 768px)
+        font-size: 18px
+
+    @media (max-width: 640px)
+        width: 90%
+        padding: 10px 10px
+
+textarea
+    display: block
+    width: 100%
+    max-width: 95%
+    height: 320px
+    padding: 10px 10px
+    margin-top: 20px
+    margin: 10px 0px
+    text-align: left
+    background: rgba(white, 0.75)
+
+    @include transition(all 0.30s ease-in-out)
+    border: 2px solid $blue
+    border-radius: 5px
+
+    &::-webkit-input-placeholder
+        color: $blue
+
+    &:-moz-placeholder
+        color: $blue
+
+    &::-moz-placeholder
+        color: $blue
+
+    &:-ms-input-placeholder
+        color: $blue
+
+    &:focus
+        outline: none
+        box-shadow: 0 0 5px black
+
+
+    @media (max-width: 1024px)
+        font-size: 24px
+
+    @media (max-width: 768px)
+        font-size: 18px
+        
+    @media (max-width: 640px)
+        width: 90%
+        max-width: 90%
+
+.submit
+    width: 20%
+    height: 70px
+    border: 2px solid $blue
+    border-radius: 10px
+    background-color: rgba(white, 0.75)
+    color: black
+    margin: 20px 0px
+    padding: 10px
+
+    font-size: 32px
+    line-height: 0
+
+    cursor: pointer
+
+    &:focus
+        outline: none
+        box-shadow: 0 0 5px black
+
+    &:hover
+        outline: none
+        box-shadow: 0 0 5px black
+    
+    @media (max-width: 1440px)
+        width: 30%    
+
+    @media (max-width: 1024px)
+        font-size: 24px
+        width: 50%
+
+    @media (max-width: 640px)
+        margin: 20px auto
+        margin-bottom: 0

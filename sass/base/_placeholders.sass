@@ -1,0 +1,75 @@
+%background-img
+  background:
+      position: center
+      size: cover
+      repeat: no-repeat
+
+%container
+  position: relative
+  height: auto
+  padding: 64px 50px
+  overflow: hidden
+
+  @media (max-width: 1024px)
+    padding: 40px 20px
+
+  @media (max-width: 640px)
+     text-align: center
+
+  h1, h2, p
+    margin: 0
+    padding: 0
+
+  h1, h2
+    margin-bottom: 10px
+
+    &:last-child
+        margin-bottom: 0
+
+  h1
+    font-size: 48px
+
+    @media (max-width: 1440px)
+      font-size: 32px
+
+    @media (max-width: 768px)
+      font-size: 32px
+
+  h2
+    font-size: 32px
+    font-style: italic
+    font-weight: 500
+
+    @media (max-width: 1440px)
+      font-size: 24px
+
+    @media (max-width: 768px)
+      font-size: 24px
+
+    @media (max-width: 640px)
+      font-size: 21px
+    
+  .black 
+    background-color: black
+
+  .white
+    background-color: white 
+
+  .blue
+    background-color: $blue 
+
+  .seperator
+    width: 12%
+    height: 5px
+    margin: 20px 0
+    padding: 0
+
+    @media (max-width: 1024px)
+      margin: 20px 0
+
+    @media (max-width: 640px)
+      margin: 20px auto
+  
+  .fa-overlay
+    position: absolute
+    opacity: 0.25

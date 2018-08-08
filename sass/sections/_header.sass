@@ -1,0 +1,100 @@
+#header_container
+    position: absolute
+    left: 54px
+    top: calc(50% - 100px)
+    color: white
+
+    overflow: hidden
+
+    h1, h2, h3
+        margin: 0
+        padding: 0
+
+    h1, h2
+        margin-bottom: 20px
+
+    h1
+        font-size: 64px
+
+        @media (max-width: 1440px)
+            font-size: 48px
+
+    h2
+        font-size: 48px
+
+        @media (max-width: 1440px)
+            font-size: 32px
+
+    h3
+        font-size: 32px
+        font-style: italic
+        font-weight: 400
+
+        @media (max-width: 1440px)
+            font-size: 28px
+
+#header_img
+    position: absolute
+    bottom: 0
+    right: 0
+
+    width: 40%
+
+@media (max-width: 1024px)
+    #header_img
+        display: none
+
+    #header_container
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 100%
+        
+        text-align: center
+
+        h1
+            font-size: 64px
+
+        h2
+            font-size: 32px
+        
+        h3
+            font-size: 28px
+
+@media (max-width: 768px)
+    #header_container h1
+            font-size: 48px
+
+@media (max-width: 640px)
+    #header_container
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 100%
+        
+        line-height: 1.25
+        text-align: center
+
+        h1, h2
+            margin-bottom: 10px
+
+        h1
+            font-size: 24px
+
+        h2
+            font-size: 16px
+        
+        h3
+            font-size: 14px
+
+@media (max-width: 375px)
+    #header_container 
+        h1
+            font-size: 18px
+        h2
+            font-size: 16px
+
+@media (max-width: 360px)
+    #header_container 
+        h2
+            font-size: 14px

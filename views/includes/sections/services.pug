@@ -1,0 +1,42 @@
+mixin itm(text)
+    li
+        i.fa.fa-plug
+        | #{text}
+
+h1#services Services
+hr.seperator.white
+h2 "Yes, we'll do the small jobs!"
+p 
+    | We are your local electrician providing more than 30 years of high quality and dependable service. We specialize in design services for both indoor and outdoor lighting providing beauty, value, security and personal safety for you and your family. 
+p
+    strong
+        | We specialize in residential and commercial electrical repairs, installations, additions and services including, but not limited to
+    |: 
+.column
+    .left
+        ul
+            +itm("Troubleshooting & repair problems with your electrical wiring")
+            +itm("Electrical service upgrades (including fuses to breakers)")
+            +itm("Indoor & outdoor lighting")
+            +itm("Appliance wiring")
+            +itm("Panel replacement")
+            +itm("Attic fans, paddle fans & bathroom exhaust fans")
+            +itm("Parking lot lights")
+            +itm("Emergency down wire repair")
+            +itm("Programmable thermostat")
+    #right_list
+        ul
+            +itm("Custom lighting")
+            +itm("Pool & hot-tub wiring")
+            +itm("Surge protection")
+            +itm("Whole house fans")
+            +itm("Grounding and bonding")
+            +itm("Generators")
+            +itm("Aerial lift")
+            +itm("Air conditioning lines")
+            +itm("Electric heating")
+
+p And much, much more.
+
+.fa-overlay#services_ico
+    i.fa.fa-bolt

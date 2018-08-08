@@ -1,0 +1,63 @@
+.team_wrapper
+    column-count: 2
+    margin: 64px 0 0 0
+
+    @media (max-width: 1024px)
+        column-count: 1
+        margin: 24px 0 32px 0
+
+    .member_wrapper
+        width: 75%
+        margin: 0 auto
+        text-align: center
+
+        @media (max-width: 1024px)
+            width: 100%
+            margin: 32px auto
+
+        .avatar
+            width: 200px
+            height: 200px
+            border-radius: 50%
+            border: 5px solid white
+        
+        .name, .position, .title
+            margin: 20px
+
+        .name
+            font:
+                family: $header-f 
+                size: 32px
+                weight: bold
+
+        .position, .title
+            font:
+                family: $copy-f
+                size: 24px
+                style: italic
+                weight: normal
+        
+        p
+            width: 100% 
+            font:
+                size: 18px
+
+            margin: 20px 0
+
+            @media (max-width: 1024px)
+                font-size: 24px
+
+            @media (max-width: 768px)
+                font-size: 18px
+
+            @media (max-width: 320px)
+                font-size: 14px
+    
+#team_ico
+    font-size: 600px
+    right: -350px
+    bottom: -150px
+
+    @media (max-width: 1024px)
+        font-size: 400px
+        right: -200px

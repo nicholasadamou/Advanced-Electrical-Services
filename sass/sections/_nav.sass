@@ -1,0 +1,144 @@
+nav
+    display: flex
+    align-items: center
+    justify-content: space-between
+    min-height: 10vh
+    position: relative
+    width: 100%
+
+    z-index: 999
+
+    margin: 0
+    padding: 0
+
+    transition: background .25s ease-in-out
+
+    #logo
+        @media (max-width: 1280px)
+            width: 50%
+        @media (max-width: 1024px)
+            width: auto
+
+    img
+        padding: 20px
+        padding-right: 0
+        width: 45%
+
+        @media (max-width: 1440px)
+            width: 35%
+
+    #toggle
+        display: none
+    
+    .hamburger:hover
+        opacity: 1
+    
+    .hamburger:focus
+        outline: none
+    
+    .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+        background-color: white
+
+    #nav
+        list-style-type: none
+        padding: 20px
+        padding-right: 40px
+        margin: 0
+
+        @media (max-width: 1280px)
+            padding-right: 20px
+
+        li
+            display: inline
+            padding: 10px
+
+            a
+                font: 
+                    family: $header-f
+                    weight: 900
+                color: white
+                text-decoration: none
+
+.open
+    display: block !important
+
+@media (max-width: 1024px)
+    #border nav
+        background-color: $blue !important
+
+        img
+            width: 40%
+            padding: 20px 0
+    
+    #border nav #nav
+        display: none
+
+        position: absolute
+        left: 0
+
+        padding: 0
+        background-color: $blue
+        width: 100%
+        
+        text-align: center
+
+
+
+        li
+            display: block
+            padding: 20px 0
+
+            a 
+                color: white !important
+                font-size: 24px
+
+            &:hover
+                cursor: pointer
+
+                a 
+                    color: white !important
+
+                    &:hover
+                        text-decoration: none
+    
+    #border nav #toggle
+        display: block
+
+        margin: 0 20px
+
+        font-size: 48px
+        color: white
+        text-decoration: none
+
+@media (max-width: 1440px)
+    #border nav #nav li
+        padding: 5px
+
+        a
+            font-size: 14px
+
+@media (max-width: 1024px)
+    #border nav #nav li 
+        padding: 20px 0
+
+        a
+            font-size: 18px
+
+@media (max-width: 420px)
+    #border nav #nav li 
+        padding: 20px 0
+        a
+            font-size: 16px
+
+    #border nav img
+        width: 62.5%
+
+    #border nav #toggle
+        font-size: 32px
+
+@media (max-width: 380px)
+    #border nav img
+        width: 100%
+
+    #border nav #nav li a
+        font-size: 14px

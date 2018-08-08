@@ -1,0 +1,84 @@
+.blue_container
+    p
+        width: 75%
+
+        font-size: 24px
+        line-height: 2
+
+        @media (max-width: 1024px)
+            width: 100%
+
+        @media (max-width: 768px)
+            font-size: 18px
+
+        @media (max-width: 640px)
+            font-size: 16px
+
+        @media (max-width: 320px)
+            font-size: 14px
+    
+    .column
+        display: flex
+        margin: 20px 0
+
+        @media (max-width: 1024px)
+            flex-direction: column
+
+        div
+        flex-grow: 0
+        flex-shrink: 0
+
+        .left
+            margin-right: 20px
+
+        .right
+            margin-left: 20px
+
+        @media (max-width: 640px)
+            margin: 0
+        
+        ul
+            display: inline
+
+            margin: 0
+            padding: 0
+
+            list-style-type: none
+
+            li 
+                padding: 10px 0
+                font-size: 24px
+
+                @media (max-width: 1440px)
+                    font-size: 18px
+
+                @media (max-width: 768px)
+                    line-height: 1
+                    font-size: 18px
+                
+                @media (max-width: 640px)
+                    line-height: 2
+                    font-size: 16px
+                    
+                @media (max-width: 320px)
+                    font-size: 14px
+
+                .fa
+                    padding-right: 10px
+
+    #services_ico
+        font-size: 900px
+        bottom: -140px
+        right: -150px
+
+        @media (max-width: 1024px)
+            right: -50px
+            font-size: 500px
+
+        @media (max-width: 640px)
+            opacity: 0.25
+            font-size: 400px
+
+@media (max-width: 1024px)
+    #border .blue_container #right_list
+        display: none

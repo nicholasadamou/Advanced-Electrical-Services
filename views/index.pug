@@ -1,0 +1,31 @@
+extends ./layouts/_layout.pug
+
+block mixins
+	
+block variables
+	- var title = "Advanced Electrical Services, Inc."
+	- var description = "Since 1986, Advanced Electrical Services has been providing residential, commercial and industrial electrical services to the greater New Milford area. Our owner, Tom Fisher, is a Master Electrician with over 35 years of experience as a full service electrical contractor. Dependable and detail oriented, we hire only licensed electricians and state registered apprentices. We are fully licensed and insured, we carry both liability and workmen’s comp. coverage in the State of CT. We have strived to build lasting relationships and trust with our customers through mutual respect, integrity of our workmanship and a commitment to the highest standard of excellence and safety. We are a local New Milford business, owned and operated by Tom, a New Milford native and invested and involved in the local New Milford community. Call us today for a free estimate, your satisfaction is important to us."
+	- var author = "Nicholas Adamou"
+	- var tags = "electrical, electric, wiring, ceiling, fans, service, panel, local, outlets, switches, dimmers, circuit, breakers, fuse, panels, fans, attic, fans, air, conditioners, advanced, generator, aerial, lift, lights, lighting, emergency, energy, efficient, surge, landscape, lighting, pool, wiring"
+	- var pageName = "index"
+
+block content
+	#border
+		include includes/modules/top.pug
+		#header
+			include includes/sections/nav.pug
+			include includes/sections/header.pug
+		section.blue_container
+			include includes/sections/services.pug
+		section.white_container
+			include includes/sections/about.pug
+		section.blue_container
+			include includes/sections/team.pug
+		section.white_container
+			include includes/sections/gallery.pug
+		section.blue_container
+			include includes/sections/testimonials.pug
+		section.white_container
+			include includes/sections/contact.pug
+		section.blue_container
+			include includes/sections/footer.pug
