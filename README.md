@@ -1,7 +1,5 @@
 # Advanced Electrical Services
 
-![logo](design/img/plug-icon-preview.png)
-
 [What is it?](https://github.com/nicholasadamou/Advanced-Electrical-Services#what-is-it) / [What is Advanced Electrical Services](https://github.com/nicholasadamou/Advanced-Electrical-Services#what-is-advanced-electrical-services) / [Requirements](https://github.com/nicholasadamou/Advanced-Electrical-Services#requirements) / [Preview Images](https://github.com/nicholasadamou/Advanced-Electrical-Services#preview-images) / [Licence]()
 
 What is it?
