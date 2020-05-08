@@ -29,7 +29,7 @@ Visit the [previews directory](previews) to see what the project looks like when
 License
 ------------
 
-© 2018 Advanced Electrical Services Inc & Nicholas Adamou.
+© Advanced Electrical Services Inc & Nicholas Adamou.
 
 It is free software, and may be redistributed under the terms specified in the [LICENSE] file.
 
