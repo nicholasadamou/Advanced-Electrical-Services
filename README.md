@@ -5,7 +5,7 @@
 What is it?
 ------------
 
-It is a revamped version of [Advanced Electrical Services](https://advanced-electrical-services.netlify.com/)'s website built using SASS, Pug and JavaScript.
+It is a revamped version of Advanced Electrical Services's website built using SASS, Pug and JavaScript.
 
 What is *Advanced Electrical Services*?
 ------------
